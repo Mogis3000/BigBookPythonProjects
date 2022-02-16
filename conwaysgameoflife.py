@@ -1,4 +1,4 @@
-""" Conwy's Game of Life, by Al Sweigart al@inventwithpython.com
+""" Conway's Game of Life, by Al Sweigart al@inventwithpython.com
 The classic cellular automata simulation. Press Ctrl-C to stop.
 More info at: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 View this code at https://nostarch.com/big-book-small-python-projects
@@ -83,42 +83,13 @@ while True:  # Main program loop.
             else:
                 # Everything else dies or stays dead:
                 nextCells[(x, y)] = DEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    try:
+        time.sleep(1)  # Add a 1 second pause to reduce flickering.
+    except KeyboardInterrupt:
+        print("Conway's Game of Life")
+        print('By Al Sweigart al@inventwithpython.com')
+        sys.exit()  # When Ctrl-C is pressed, end the program.
 
 # Big Book of Small Python Projects by Al Sweigart
 # Mogis / # 15 Feb 2022
