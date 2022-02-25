@@ -11,7 +11,7 @@ WIDTH = 79  # The width of the cell grid.
 HEIGHT = 20  # The height of the cell grid.
 
 # (!) Try changing ALIVE to '#' or another character:
-ALIVE = '0'  # The character representing a living cell.
+ALIVE = 'O'  # The character representing a living cell.
 # (!) Try changing Dead to '.' or another character:
 DEAD = ' '  # The character representing a dead cell.
 
